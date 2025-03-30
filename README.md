@@ -33,38 +33,25 @@ The **E-Notes Management System** is a web-based platform that allows users (stu
 ```
 enotes_management/
 │── backend/                      # Django Backend
-│   ├── enotes/                    # Main Django Project
+│   ├── Enotes_Management_System/                    # Main Django Project
 │   │   ├── settings.py            # Project settings
 │   │   ├── urls.py                # Project URL configuration
 │   │   ├── wsgi.py                # WSGI entry point
 │   │   ├── asgi.py                # ASGI entry point (optional)
 │   │   ├── manage.py              # Django management script
 │   │
-│   ├── apps/                      # Django Apps
-│   │   ├── authentication/        # User authentication
-│   │   ├── notes/                 # Notes management
-│   │   ├── categories/            # Notes categorization
-│   │   ├── sharing/               # Sharing features
-│   │   ├── notifications/         # Notifications & Alerts
-│   │   ├── analytics/             # User activity tracking
+│   ├── enotes/                      # Django Apps
+│   │   ├── __init_.py/        
+│   │   ├── admin.py/                
+│   │   ├── apps.py/
+│   │   ├── models.py/              
+│   │   ├── tests.py/       
+│   │   ├── views.py/             
 │   │
 │   ├── static/                    # Static Files (CSS, JS, images)
 │   ├── media/                     # Uploaded Files (PDFs, Docs, Images)
 │   ├── templates/                 # Django Templates
 │
-│── frontend/                      # React / HTML Frontend (Optional)
-│   ├── public/
-│   ├── src/
-│   │   ├── components/             # React components
-│   │   ├── pages/                  # Dashboard, Profile, etc.
-│   │   ├── services/               # API calls
-│
-│── docs/                           # Documentation
-│── tests/                          # Automated Tests
-│── .env                            # Environment Variables
-│── README.md                       # Project Documentation
-│── Dockerfile                      # Docker Configuration
-│── docker-compose.yml              # Docker Compose for services
 ```
 
 ## 🔧 Installation & Setup
@@ -72,16 +59,16 @@ enotes_management/
 Ensure you have the following installed:
 - **Python 3.x** (For Django backend)
 - **PostgreSQL/MySQL** (Database)
-- **Node.js & npm** (For frontend, if applicable)
+
 
 ### 2️⃣ Clone the Repository
-```bash
-git clone https://github.com/yourusername/enotes-management.git
+```
+git clone https://github.com/NandiniReddy9/E-Notes-Management.git
 cd enotes-management
 ```
 
 ### 3️⃣ Set Up Virtual Environment & Install Dependencies
-```bash
+```
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -89,7 +76,7 @@ pip install -r requirements.txt
 
 ### 4️⃣ Configure Environment Variables
 Create a `.env` file in the backend directory:
-```env
+```
 SECRET_KEY=your-secret-key
 DEBUG=True
 DATABASE_URL=postgres://username:password@localhost:5432/enotes
@@ -97,13 +84,13 @@ JWT_SECRET=your-jwt-secret
 ```
 
 ### 5️⃣ Run Migrations & Start the Server
-```bash
+```
 python manage.py migrate
 python manage.py runserver
 ```
 
 ### 6️⃣ Run Frontend (Optional for React)
-```bash
+```
 cd frontend
 npm install
 npm start
@@ -138,18 +125,11 @@ npm start
 - **Logging & Monitoring** for tracking activities
 
 ## 🚀 Deployment Guide
-### 1️⃣ Setup & Configure the Environment
+### 1️Setup & Configure the Environment
 Modify `.env` with production credentials.
 
-### 2️⃣ Run Using Docker (Optional)
-```bash
-docker-compose up --build
-```
 
-### 3️⃣ Deploy to Cloud (AWS, Heroku, DigitalOcean, etc.)
-```bash
-git push heroku main
-```
+
 
 ## 🤝 Contributing
 Contributions are welcome! Follow these steps:
@@ -163,8 +143,7 @@ Contributions are welcome! Follow these steps:
 - 📖 Documentation: [API Docs](https://api.enotes.com/docs)
 - 🌐 Website: [www.enotes.com](https://www.enotes.com)
 
-## 📜 License
-This project is licensed under the **MIT License**.
+
 
 ---
 
