@@ -24,6 +24,67 @@
 ✅ Scalable & Secure Backend
 
 
+Enotes_Management_System/
+
+
+│── Enotes_Management_System/
+
+
+│   │── __init__.py
+
+
+
+│   │── settings.py
+
+
+│   │── urls.py
+
+
+│   │── wsgi.py
+
+
+│── enotes/
+
+
+│   │── migrations/
+
+
+│   │── static/
+
+
+│   │── templates/
+
+
+│   │── __init__.py
+
+
+│   │── admin.py
+
+
+│   │── apps.py
+
+
+│   │── models.py
+
+
+│   │── tests.py
+
+
+│   │── views.py
+
+
+│── db.sqlite3
+
+
+│── manage.py
+
+
+│── .idea/
+
+
+│── External Libraries/
+
+
 
 
 🛠️ Tech Stack
